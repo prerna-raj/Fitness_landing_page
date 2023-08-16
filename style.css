@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    
 }
 body{
     width: 100vw;
@@ -140,9 +140,10 @@ h1 i{
         display: flex; /* Show when active class is applied */
         flex-direction: column; /* Stack items vertically */
         position: absolute;
-        top: 60px; /* Adjust as needed */
+        top: 85px; /* Adjust as needed *
         right: 20px; /* Adjust as needed */
         background-color: #333;
         width: 150px;
+        z-index: 1;
       }
 }
