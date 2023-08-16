@@ -17,7 +17,7 @@
             <h1>Feel<i class="fa-solid fa-dumbbell"></i>Fit</h1>
             
         </div>
-        <div class="nav-items">
+        <div class="nav-items active">
             <h4>Home</h4>
             <h4>About</h4>
             <h4>Services</h4>
@@ -26,6 +26,7 @@
             <i class="fa-solid fa-bars"></i>
         </div>
     </nav>
+</header>
     <main>
         <div class="hero">
             <div class="left">
@@ -40,6 +41,17 @@
             </div>
         </div>
     </main>
-</header>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const menuIcon = document.querySelector('.fa-bars');
+    const navItems = document.querySelector('.nav-items');
+
+    menuIcon.addEventListener('click', () => {
+      navItems.classList.toggle('active'); // Toggle the active class
+    });
+  });
+      </script>
+      
 </body>
 </html>

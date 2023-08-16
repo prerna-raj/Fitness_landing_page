@@ -40,7 +40,7 @@ h1 i{
     color: #ffffff;
     font-weight: 700;
     }
-    
+   
       
 /**Hero section css**/
 .hero{    
@@ -102,6 +102,9 @@ h1 i{
     .btn{
         display: none;
     }
+    .nav-items.active {
+        display: block; /* or block, depending on your layout */
+      }
     .nav-items i{
         display: block;        
     }
@@ -128,4 +131,18 @@ h1 i{
         width: 100%;
         height: 50%;
     }
+}
+@media screen and (max-width:600px){
+    .nav-items{
+        display:none;
+    }
+    .nav-items.active {
+        display: flex; /* Show when active class is applied */
+        flex-direction: column; /* Stack items vertically */
+        position: absolute;
+        top: 60px; /* Adjust as needed */
+        right: 20px; /* Adjust as needed */
+        background-color: #333;
+        width: 150px;
+      }
 }
